@@ -22,6 +22,7 @@ claustrum
 │   └───raw
 │       └───BigBrain
 │       └───Maastricht
+│       └───3T_comparison
 │   └───segmented
 │       └───BigBrain
 │       └───Maastricht
