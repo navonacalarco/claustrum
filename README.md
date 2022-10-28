@@ -2,25 +2,41 @@
 
 This repo contains all analysis scripts and files for the 7T claustrum segmentation project, conducted under the supervision of Drs. Kâmil Uludağ and Sriranga Kashyap.
 
-code
-  BigBrain
-  7T
 
-data
-  raw
-    BigBrain
-    7T
-  segmentation
-    BigBrain
-    7T
+### Folder structure
+
+```
+claustrum
+│   README.md
+│     
+└───code
+│   └───BigBrain
+│       │   file111.txt
+│       │   file112.txt
+│       │   ...
+│   └───Maastricht
+│       │   file111.txt
+│       │   file112.txt
+│ 
+└───data
+│   └───raw
+│       └───BigBrain
+│       └───Maastricht
+│   └───segmented
+│       └───BigBrain
+│       └───Maastricht
+```
+
   
 
 -----
 
-Links
+### Links
+
+[EBRAINS explorer](https://ebrains.eu/service/human-brain-atlas) 
 
 -----
 
-Other information
+### Misc.
 
 Relevant literature in Zotero.
