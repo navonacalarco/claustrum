@@ -32,7 +32,9 @@ claustrum
 
 Manual segmentation
 
-Automated segmentation of 7T: Deep learning method from [Li et al, 2021](https://github.com/hongweilibran/claustrum_multi_view)
+Automated segmentation of 7T: Deep learning method from [Li et al., 2021](https://github.com/hongweilibran/claustrum_multi_view). 
+
+Also compare automated segmentation of dorsal clastrum from [Berman et al., 2020](https://github.com/MezerLab/ClaustrumSegmentation). 
 
 -----
 
