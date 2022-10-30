@@ -28,7 +28,11 @@ claustrum
 │       └───Maastricht
 ```
 
-  
+### Methods
+
+Manual segmentation
+
+Automated segmentation of 7T: Deep learning method from [Li et al, 2021](https://github.com/hongweilibran/claustrum_multi_view)
 
 -----
 
