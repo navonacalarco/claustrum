@@ -1,49 +1,14 @@
 # Claustrum Project
 
-This repo contains all analysis scripts and files for the 7T claustrum segmentation project, conducted under the supervision of Drs. Kâmil Uludağ and Sriranga Kashyap.
+This repo contains the claustrum segmentation we made of BigBrain, as well as the atlas we made at 0.5mm isotropic combining the BigBrain segmentation with two high-resolution segmentations from [Mauri and colleagues (2025)](https://drive.google.com/file/d/1jtjtr1lUzmPFR3D8_4fZX9FfqX2B-Koj/view?usp=sharing), and 10 MRI images. 
 
+The files are as follows:
 
-### Folder structure
+```markdown
+| FileName | Resolution (μm) | Modality   | Ex vivo / In vivo | Segmenter | Subject ID |
 
 ```
-claustrum
-│   README.md
-│     
-└───code
-│   └───BigBrain
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
-│   └───Maastricht
-│       │   file111.txt
-│       │   file112.txt
-│ 
-└───data
-│   └───raw
-│       └───BigBrain
-│       └───Maastricht
-│       └───3T_comparison
-│   └───segmented
-│       └───BigBrain
-│       └───Maastricht
-```
 
-### Methods
 
-Manual segmentation
+Because of its large size, the intensity images for the BigBrain dataset is available via GoodDrive link.
 
-Automated segmentation of 7T: Deep learning method from [Li et al., 2021](https://github.com/hongweilibran/claustrum_multi_view). 
-
-Also compare automated segmentation of dorsal clastrum from [Berman et al., 2020](https://github.com/MezerLab/ClaustrumSegmentation). 
-
------
-
-### Links
-
-[EBRAINS explorer](https://ebrains.eu/service/human-brain-atlas) 
-
------
-
-### Misc.
-
-Relevant literature in Zotero.
