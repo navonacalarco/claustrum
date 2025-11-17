@@ -16,6 +16,9 @@ The files are as follows:
 | atlas/claustrum_prob_weighted.nii.gz            | 500             | segmentaiton  | combined   | cross-modality atlas in MNI space; see description below |
 ```
 
+Because of their large size, the intensity image for the [BigBrain](https://drive.google.com/file/d/1jtjtr1lUzmPFR3D8_4fZX9FfqX2B-Koj/view?usp=sharing) dataset that underies the combined segmentation is available via GoogleDrive link.
+
+
 The atlas was made from the following segmentations:
 
 ```markdown
