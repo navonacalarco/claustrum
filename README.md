@@ -1,33 +1,210 @@
-# Claustrum Project
+<p align="center">
+  <a href="https://www.biorxiv.org/content/10.64898/2025.12.06.692728v1">
+    <img src="figures/paper_preview.png" width="560" alt="Calarco et al. 2025 — Multiscale characterisation of the human claustrum from histology to MRI"/>
+  </a>
+  <br/>
+  <em>Click to read the preprint →</em> <a href="https://www.biorxiv.org/content/10.64898/2025.12.06.692728v1"><strong>bioRxiv 2025.12.06.692728</strong></a>
+</p>
 
-This repo contains the claustrum segmentation we made of BigBrain, as well as the atlas we made at 0.5mm isotropic.
+---
 
-The files are as follows:
+<h1 align="center">Multiscale characterisation of the human claustrum<br>from histology to MRI</h1>
 
-```markdown
-| FileName                                        | Resolution (μm) | Type          | Hemisphere | Description |
-|-------------------------------------------------|-----------------|---------------|------------|-------------|
-| BigBrain/bigbrain_100um_CROPPED-LEFT.nii.gz     | 100             | intensity     | left       | cropped image underlying left segmentation               |
-| BigBrain/bigbrain_100um_CROPPED-RIGHT.nii.gz    | 100             | intensity     | right      | cropped image underlying right segmentation              |
-| BigBrain/claustrumSeg_LEFT.nii.gz               | 100             | segmentation  | left       | manual segmentation, left hemisphere, cropped            |
-| BigBrain/claustrumSeg_RIGHT.nii.gz              | 100             | segmentation  | right      | manual segmentation, right hemisphere, cropped           |
-| BigBrain/claustrumSeg_combined_uncropped.nii.gz | 100             | segmentation  | combined   | combined segmentations, in complete BigBrain dimensions  |
-| atlas/mni_icbm152_t1_tal_nlin_sym_09b.nii.gz    | 500             | intensity     | combined   | MNI template                                             |
-| atlas/claustrum_prob_weighted.nii.gz            | 500             | segmentaiton  | combined   | cross-modality atlas in MNI space; see description below |
+<p align="center">
+Navona Calarco &nbsp;·&nbsp; Skerdi Progri &nbsp;·&nbsp; Sriranga Kashyap &nbsp;·&nbsp; Shuting Xie<br>
+Claude Lepage &nbsp;·&nbsp; Boris C. Bernhardt &nbsp;·&nbsp; Alan C. Evans &nbsp;·&nbsp; Kâmil Uludağ
+</p>
+
+---
+
+## About
+
+This repository contains the data accompanying our paper on the human claustrum. We provide the manual histological segmentation of the claustrum derived from the *BigBrain* dataset (n=1) at 100 µm isotropic resolution — the highest-resolution reconstruction of this structure available. We also provide a cross-modality probabilistic atlas (n=13) registered to MNI space at 0.5 mm isotropic, integrating segmentations spanning histology, ex vivo MRI, and in vivo 7T MRI. 
+
+---
+
+## BigBrain segmentation
+
+Our "gold-standard" segmentation was derived from manual delineation of the claustrum in the *BigBrain* histological dataset at 100 µm isotropic resolution. This represents the primary reference used in our multiscale analyses.
+
+<!-- Replace the line below with your actual figure -->
+<!-- ![BigBrain segmentation](figures/bigbrain_segmentation.png) -->
+
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Resolution</th>
+      <th>Type</th>
+      <th>Hemisphere</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>BigBrain/bigbrain_100um_CROPPED-LEFT.nii.gz</code></td>
+      <td>100 µm</td>
+      <td>intensity</td>
+      <td>left</td>
+      <td>Cropped intensity image underlying left segmentation</td>
+    </tr>
+    <tr>
+      <td><code>BigBrain/bigbrain_100um_CROPPED-RIGHT.nii.gz</code></td>
+      <td>100 µm</td>
+      <td>intensity</td>
+      <td>right</td>
+      <td>Cropped intensity image underlying right segmentation</td>
+    </tr>
+    <tr>
+      <td><code>BigBrain/claustrumSeg_LEFT.nii.gz</code></td>
+      <td>100 µm</td>
+      <td>segmentation</td>
+      <td>left</td>
+      <td>Manual segmentation, left hemisphere, cropped</td>
+    </tr>
+    <tr>
+      <td><code>BigBrain/claustrumSeg_RIGHT.nii.gz</code></td>
+      <td>100 µm</td>
+      <td>segmentation</td>
+      <td>right</td>
+      <td>Manual segmentation, right hemisphere, cropped</td>
+    </tr>
+    <tr>
+      <td><code>BigBrain/claustrumSeg_combined_uncropped.nii.gz</code></td>
+      <td>100 µm</td>
+      <td>segmentation</td>
+      <td>bilateral</td>
+      <td>Combined segmentations in full BigBrain dimensions</td>
+    </tr>
+  </tbody>
+</table>
+
+> **Note:** The full-resolution BigBrain intensity volume underlying the combined segmentation is too large for GitHub and can be accessed via [LORIS](https://bigbrain.loris.ca/main.php?test_name=brainvolumes&release=2015) (2.9 GB).
+
+---
+
+## Probabilistic atlas
+
+The cross-modality probabilistic atlas is registered to MNI152 space at 0.5 mm isotropic resolution. It was constructed by integrating 13 segmentations from four datasets spanning histology, ex vivo MRI, and in vivo 7T MRI.
+
+<!-- Replace the line below with your actual figure -->
+<!-- ![Probabilistic atlas](figures/atlas.png) -->
+
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Resolution</th>
+      <th>Type</th>
+      <th>Hemisphere</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>atlas/mni_icbm152_t1_tal_nlin_sym_09b.nii.gz</code></td>
+      <td>500 µm</td>
+      <td>intensity</td>
+      <td>bilateral</td>
+      <td>MNI152 template</td>
+    </tr>
+    <tr>
+      <td><code>atlas/claustrum_prob_weighted.nii.gz</code></td>
+      <td>500 µm</td>
+      <td>segmentation</td>
+      <td>bilateral</td>
+      <td>Cross-modality probabilistic atlas in MNI space</td>
+    </tr>
+  </tbody>
+</table>
+
+### Atlas construction
+
+<table>
+  <thead>
+    <tr>
+      <th>N</th>
+      <th>Dataset</th>
+      <th>Resolution</th>
+      <th>Modality</th>
+      <th>Acquisition</th>
+      <th>Segmenter</th>
+      <th>Subject(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="https://bigbrain.loris.ca/main.php?">BigBrain</a></td>
+      <td>100 µm</td>
+      <td>Histology</td>
+      <td>Ex vivo</td>
+      <td>Calarco et al.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><a href="https://openneuro.org/datasets/ds002179/versions/1.1.0">Edlow</a></td>
+      <td>100 µm</td>
+      <td>MRI</td>
+      <td>Ex vivo</td>
+      <td>Mauri et al. (2025)†</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><a href="https://datadryad.org/dataset/doi:10.5061/dryad.38s74">Lüsebrink</a></td>
+      <td>250 µm</td>
+      <td>MRI</td>
+      <td>In vivo</td>
+      <td>Mauri et al. (2025)†</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="https://osf.io/mhq3f/overview">MICA-PNI</a></td>
+      <td>500 µm</td>
+      <td>MRI</td>
+      <td>In vivo</td>
+      <td>Calarco et al.</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+† The Edlow and Lüsebrink dataset segmentations were made publicly available by [Mauri et al. (2025)](https://github.com/chiara-mauri/claustrum_segmentation) as part of their publication:
+
+> Mauri C, Fritz R, Mora J, Billot B, Iglesias JE, Van Leemput K, Augustinack J, Greve DN. A contrast-agnostic method for ultra-high resolution claustrum segmentation. *Human Brain Mapping*. 2025. doi:[10.1002/hbm.70303](https://doi.org/10.1002/hbm.70303)
+
+---
+
+## Citation
+
+If you use these data, please cite:
+
+```bibtex
+@article{calarco2025claustrum,
+  title   = {Multiscale characterisation of the human claustrum from histology to MRI},
+  author  = {Calarco, Navona and Progri, Skerdi and Kashyap, Sriranga and
+             Xie, Shuting and Lepage, Claude and Bernhardt, Boris C. and
+             Evans, Alan C. and Uludag, Kamil},
+  year    = {2025},
+  note    = {Preprint},
+  url     = {https://www.biorxiv.org/content/10.64898/2025.12.06.692728v1}
+}
 ```
 
-Because of their large size, the intensity image for the [BigBrain](https://drive.google.com/file/d/1jtjtr1lUzmPFR3D8_4fZX9FfqX2B-Koj/view?usp=sharing) dataset that underies the combined segmentation is available via GoogleDrive link.
+---
 
+## Contact
 
-The atlas was made from the following segmentations:
+**Navona Calarco**  
+PhD Candidate, Medical Biophysics, University of Toronto  
+BRAIN-TO Lab, Krembil Brain Institute, UHN  
+[navona.calarco@mail.utoronto.ca](mailto:navona.calarco@mail.utoronto.ca)
 
-```markdown
-| N | Dataset     | Resolution (μm) | Modality   | Ex vivo / In vivo | Segmenter | Subject ID |
-|--------|-------------|-----------------|------------|-------------------|-----------|------------|
-| 1      | BigBrain    | 100             | Histology  | Ex vivo           | us        | 1          |
-| 1      | Edlow       | 100             | MRI        | Ex vivo           | Mauri     | 13         |
-| 1      | Lusebrink   | 250             | MRI        | In vivo           | Mauri     | 16         |
-| 10     | Montreal    | 500             | MRI        | In vivo           | us        | all 10     |
-```
+---
 
-
+<p align="center">
+<sub><a href="https://brain-to.github.io/">BRAIN-TO Laboratory</a> &nbsp;·&nbsp; Krembil Brain Institute &nbsp;·&nbsp; UHN &nbsp;·&nbsp; 2025</sub>
+</p>
