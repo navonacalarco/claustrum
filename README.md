@@ -27,9 +27,6 @@ This repository contains the data accompanying our paper on the human claustrum.
 
 Our "gold-standard" segmentation was derived from manual delineation of the claustrum in the *BigBrain* histological dataset at 100 µm isotropic resolution. This represents the primary reference used in our multiscale analyses.
 
-<!-- Replace the line below with your actual figure -->
-<!-- ![BigBrain segmentation](figures/bigbrain_segmentation.png) -->
-
 <table>
   <thead>
     <tr>
@@ -83,12 +80,22 @@ Our "gold-standard" segmentation was derived from manual delineation of the clau
 
 ---
 
+## MRI segmentations
+
+Manual claustrum segmentations from three in vivo 7-Tesla MRI datasets are provided in
+`MRI/segmentations/`, organised by resolution. Segmentations were performed in each subject's native space.
+
+| Dataset | Resolution | N | Source |
+| --- | --- | --- | --- |
+| `MRI/segmentations/0p5/` | 0.5 mm isotropic | 10 | [Cabalo et al. (2025)](https://doi.org/10.1038/s41597-025-04863-7) |
+| `MRI/segmentations/0p7/` | 0.7 mm isotropic | 10 | [Haast et al. (2024)](https://doi.org/10.1073/pnas.2310044121) |
+| `MRI/segmentations/1p0/` | 1.0 mm isotropic | 10 | [Kashyap et al. (2018)](https://doi.org/10.1016/j.neuroimage.2017.07.022) |
+
+---
+
 ## Probabilistic atlas
 
 The cross-modality probabilistic atlas is registered to MNI152 space at 0.5 mm isotropic resolution. It was constructed by integrating 13 segmentations from four datasets spanning histology, ex vivo MRI, and in vivo 7T MRI.
-
-<!-- Replace the line below with your actual figure -->
-<!-- ![Probabilistic atlas](figures/atlas.png) -->
 
 <table>
   <thead>
