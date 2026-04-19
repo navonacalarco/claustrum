@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.biorxiv.org/content/10.64898/2025.12.06.692728v1">
-    <img src="figures/githubRepo.png" width="100%" alt="Calarco et al. 2025 — Multiscale characterisation of the human claustrum from histology to MRI"/>
+    <img src="assets/githubRepo.png" width="100%" alt="Calarco et al. 2025 — Multiscale characterisation of the human claustrum from histology to MRI"/>
   </a>
   <br/>
   <em>Click to read the preprint →</em> <a href="https://www.biorxiv.org/content/10.64898/2025.12.06.692728v1"><strong>bioRxiv 2025.12.06.692728</strong></a>
