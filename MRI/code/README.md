@@ -9,10 +9,10 @@ corresponding to the three acquisition resolutions (0.5 mm, 0.7 mm, and 1.0 mm i
 
 | Script | Description |
 | --- | --- |
-| `mpragise.sh` | Removes background noise from MP2RAGE UNI images, producing MPRAGE-like images |
-| `brainmask.sh` | Performs brain extraction and iterative bias field correction |
-| `rigid_registration.sh` | Rigid registration to a resolution-matched MNI152 template |
-| `nonlinear_registration.sh` | Full SyN registration to MNI152 template |
+| `run_1_preprocessing.sh` | Removes background noise from MP2RAGE UNI images, producing MPRAGE-like images |
+| `run_2_brainMask.sh` | Performs brain extraction and iterative bias field correction |
+| `run_3_rigidRegistration.sh` | Rigid registration to a resolution-matched MNI152 template |
+| `run_4_nonlinearRegistration.sh` | Full SyN registration to MNI152 template |
 
 All claustrum segmentations were performed manually on preprocessed images (skull-stripped and
 bias field corrected) in each subject's native space. The three runs from the 0.5mm dataset
