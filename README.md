@@ -196,6 +196,12 @@ If you use these data, please cite:
 
 ---
 
+## License
+
+Data are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code is licensed under the [MIT License](LICENSE-code).
+
+---
+
 ## Contact
 
 **Navona Calarco**  
