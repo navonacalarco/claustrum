@@ -5,7 +5,7 @@
   <br/>
   <em>Click to read the preprint →</em> <a href="https://www.biorxiv.org/content/10.64898/2025.12.06.692728v1"><strong>bioRxiv 2025.12.06.692728</strong></a>
   &nbsp;·&nbsp;
-  <em>Archived data</em> &nbsp;<a href="https://doi.org/10.5281/zenodo.19656275"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19656275-blue" alt="DOI"/></a>
+  <em>Archived data →</em> &nbsp;<a href="https://doi.org/10.5281/zenodo.19656275"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19656275-blue" alt="DOI"/></a>
 </p>
 
 ---
@@ -67,12 +67,16 @@ The cross-modality probabilistic atlas is registered to MNI152 space at 0.5 mm i
 
 | N | Dataset | Resolution | Modality | Acquisition | Segmenter | Subject(s) |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [BigBrain](https://bigbrain.loris.ca/main.php?) | 100 µm | Histology | Ex vivo | Calarco et al. | 1 |
-| 1 | [Edlow](https://openneuro.org/datasets/ds002179/versions/1.1.0) | 100 µm | MRI | Ex vivo | Mauri et al. (2025)† | 1 |
-| 1 | [Lüsebrink](https://datadryad.org/dataset/doi:10.5061/dryad.38s74) | 250 µm | MRI | In vivo | Mauri et al. (2025)† | 1 |
+| 1 | [BigBrain](https://osf.io/xkqb3/)† | 100 µm | Histology | Ex vivo | Calarco et al. | 1 |
+| 1 | [Edlow](https://openneuro.org/datasets/ds002179/versions/1.1.0) | 100 µm | MRI | Ex vivo | Mauri et al. (2025)‡ | 1 |
+| 1 | [Lüsebrink](https://datadryad.org/dataset/doi:10.5061/dryad.38s74) | 250 µm | MRI | In vivo | Mauri et al. (2025)‡ | 1 |
 | 10 | [MICA-PNI](https://osf.io/mhq3f/overview) | 500 µm | MRI | In vivo | Calarco et al. | 10 |
 
-† The Edlow and Lüsebrink dataset segmentations were made publicly available by [Mauri et al. (2025)](https://github.com/chiara-mauri/claustrum_segmentation) as part of their publication:
+† The BigBrain volume used here is the subcortical-optimised registration to MNI152 ICBM2009b space described in [Xiao et al. (2019)](https://doi.org/10.1038/s41597-019-0217-0) as part of their publication:
+
+> Xiao Y, Lau JC, Anderson T, DeKraker J, Collins DL, Peters T, Khan AR. An accurate registration of the BigBrain dataset with the MNI PD25 and ICBM152 atlases. *Scientific Data*. 2019;6:210. doi:[10.1038/s41597-019-0217-0](https://doi.org/10.1038/s41597-019-0217-0)
+
+‡ The Edlow and Lüsebrink dataset segmentations were made publicly available by [Mauri et al. (2025)](https://github.com/chiara-mauri/claustrum_segmentation) as part of their publication:
 
 > Mauri C, Fritz R, Mora J, Billot B, Iglesias JE, Van Leemput K, Augustinack J, Greve DN. A contrast-agnostic method for ultra-high resolution claustrum segmentation. *Human Brain Mapping*. 2025. doi:[10.1002/hbm.70303](https://doi.org/10.1002/hbm.70303)
 
@@ -80,7 +84,7 @@ The cross-modality probabilistic atlas is registered to MNI152 space at 0.5 mm i
 
 ## Data availability
 
-All segmentation data in this repository are permanently archived on Zenodo: [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19656275-blue)](https://doi.org/10.5281/zenodo.19656275)
+All data and code in this repository are permanently archived on Zenodo: [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19656275-blue)](https://doi.org/10.5281/zenodo.19656275)
 
 ---
 
