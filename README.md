@@ -76,6 +76,13 @@ The cross-modality probabilistic atlas is registered to MNI152 space at 0.5 mm i
 
 ---
 
+## Data availability
+
+All segmentation data in this repository are permanently archived on Zenodo:  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
+---
+
 ## Citation
 
 If you use these data, please cite:
