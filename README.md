@@ -4,6 +4,8 @@
   </a>
   <br/>
   <em>Click to read the preprint →</em> <a href="https://www.biorxiv.org/content/10.64898/2025.12.06.692728v1"><strong>bioRxiv 2025.12.06.692728</strong></a>
+  &nbsp;·&nbsp;
+  <em>Archived data</em> &nbsp;<a href="https://doi.org/10.5281/zenodo.19656275"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19656275-blue" alt="DOI"/></a>
 </p>
 
 ---
@@ -78,8 +80,7 @@ The cross-modality probabilistic atlas is registered to MNI152 space at 0.5 mm i
 
 ## Data availability
 
-All segmentation data in this repository are permanently archived on Zenodo:  
-[![DOI](https://zenodo.org/badge/471549748.svg)](https://doi.org/10.5281/zenodo.19656275)
+All segmentation data in this repository are permanently archived on Zenodo: [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19656275-blue)](https://doi.org/10.5281/zenodo.19656275)
 
 ---
 
