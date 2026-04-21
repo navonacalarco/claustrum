@@ -46,11 +46,11 @@ Our "gold-standard" segmentation was derived from manual delineation of the clau
 Manual claustrum segmentations from three in vivo 7-Tesla MRI datasets are provided in
 `MRI/segmentations/`, organised by resolution. Segmentations were performed in each subject's native space.
 
-| Segmentation dataset | Resolution | N | Underlying dataset |
-| --- | --- | --- | --- |
-| `MRI/segmentations/0p5/` | 0.5 mm isotropic | 10 | [Cabalo et al. (2025)](https://doi.org/10.1038/s41597-025-04863-7) |
-| `MRI/segmentations/0p7/` | 0.7 mm isotropic | 10 | [Haast et al. (2024)](https://doi.org/10.1073/pnas.2310044121) |
-| `MRI/segmentations/1p0/` | 1.0 mm isotropic | 10 | [Kashyap et al. (2018)](https://doi.org/10.1016/j.neuroimage.2017.07.022) |
+| Segmentation dataset | Resolution | N | Underlying dataset | Underlying dataset reference |
+| --- | --- | --- | --- | --- |
+| `MRI/segmentations/0p5/` | 0.5 mm isotropic | 10 | [MICA-PNI](https://osf.io/mhq3f/overview) | [Cabalo et al. (2025)](https://doi.org/10.1038/s41597-025-04863-7) |
+| `MRI/segmentations/0p7/` | 0.7 mm isotropic | 10 | `MRI/data/0p7/` | [Haast et al. (2024)](https://doi.org/10.1073/pnas.2310044121) |
+| `MRI/segmentations/1p0/` | 1.0 mm isotropic | 10 | `MRI/data/1p0/` | [Kashyap et al. (2018)](https://doi.org/10.1016/j.neuroimage.2017.07.022) |
 
 ---
 
